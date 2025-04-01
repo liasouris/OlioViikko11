@@ -8,8 +8,11 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 public class ContactViewHolder extends RecyclerView.ViewHolder{
-    TextView contactNameText, contactNumberText, contactGroupText;
-    ImageButton contactDetailsButton, contactDeleteButton;
+    TextView contactNameText;
+    TextView contactNumberText;
+    TextView contactGroupText;
+    ImageButton contactDetailsButton;
+    ImageButton contactDeleteButton;
 
     public ContactViewHolder(@NonNull View itemView) {
         super(itemView);

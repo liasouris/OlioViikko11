@@ -23,7 +23,7 @@ public class AddContactActivity extends AppCompatActivity {
         lastNameEdit = findViewById(R.id.LastNameEdit);
         phoneNumberEdit = findViewById(R.id.PhoneNumberEdit);
         contactTypeRadioGroup = findViewById(R.id.ContactTypeRadioGroup);
-        addContactButton = findViewById(R.id.AddContactButton);
+        addContactButton = findViewById(R.id.AddContactActivityButton);
 
         addContactButton.setOnClickListener(new View.OnClickListener() {
             @Override

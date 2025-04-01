@@ -26,9 +26,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        addContactActivityButton = findViewById(R.id.AddContactButton);
         sortAlphabeticallyButton = findViewById(R.id.SortAlphabeticallyButton);
         sortByGroupButton = findViewById(R.id.SortByGroupButton);
+        addContactActivityButton = findViewById(R.id.AddContactActivityButton);
         recyclerView = findViewById(R.id.ListContactsRV);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
