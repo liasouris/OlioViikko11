@@ -63,9 +63,9 @@ public class MainActivity extends AppCompatActivity {
                 Collections.sort(contacts, new Comparator<Contact>() {
                     @Override
                     public int compare(Contact c1, Contact c2) {
-                        if(c1.getContactGroup().equals("Work") && !c2.getContactGroup().equals("Work"))
+                        if(c1.getContactGroup().equals("Työ") && !c2.getContactGroup().equals("Työ"))
                             return -1;
-                        if(!c1.getContactGroup().equals("Work") && c2.getContactGroup().equals("Work"))
+                        if(!c1.getContactGroup().equals("Työ") && c2.getContactGroup().equals("Työ"))
                             return 1;
                         return c1.getFirstName().compareToIgnoreCase(c2.getFirstName());
                     }

@@ -25,6 +25,7 @@ public class AddContactActivity extends AppCompatActivity {
         contactTypeRadioGroup = findViewById(R.id.ContactTypeRadioGroup);
         addContactButton = findViewById(R.id.AddContactActivityButton);
 
+
         addContactButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -33,10 +34,10 @@ public class AddContactActivity extends AppCompatActivity {
                 String lastName = lastNameEdit.getText().toString().trim();
                 String number = phoneNumberEdit.getText().toString().trim();
 
-                String contactGroup = "Personal";
+                String contactGroup = "Henkilökohtainen";
                 int selectedId = contactTypeRadioGroup.getCheckedRadioButtonId();
                 if(selectedId == R.id.WorkRadioButton) {
-                    contactGroup = "Work";
+                    contactGroup = "Työ";
                 }
 
                 Contact newContact = new Contact(firstName, lastName, number, contactGroup);

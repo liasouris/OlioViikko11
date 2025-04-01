@@ -84,14 +84,14 @@
             android:id="@+id/PersonalRadioButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Personal"
+            android:text="Henkilökohtainen"
             android:textSize="16sp" />
 
         <RadioButton
             android:id="@+id/WorkRadioButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Work"
+            android:text="Työ"
             android:textSize="16sp" />
     </RadioGroup>
 
