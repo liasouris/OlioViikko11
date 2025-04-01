@@ -20,9 +20,9 @@ public class ContactStorage {
 
     public void addContact(Contact contact) { contacts.add(contact);}
 
-    public void removeContact(int i) {
-        if(i >= 0 && i < contacts.size()) {
-            contacts.remove(i);
+    public void removeContact(int index) {
+        if(index >= 0 && index < contacts.size()) {
+            contacts.remove(index);
         }
     }
 

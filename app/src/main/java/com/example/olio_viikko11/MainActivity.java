@@ -31,7 +31,6 @@ public class MainActivity extends AppCompatActivity {
         addContactActivityButton = findViewById(R.id.AddContactActivityButton);
         recyclerView = findViewById(R.id.ListContactsRV);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
-
         contacts = ContactStorage.getInstance().getContacts();
         adapter = new ContactListAdapter(contacts);
         recyclerView.setAdapter(adapter);
