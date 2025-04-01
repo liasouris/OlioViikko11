@@ -7,13 +7,53 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/ListContactsRV"
+        android:layout_width="376dp"
+        android:layout_height="401dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <Button
+        android:id="@+id/AddContactButton"
+        android:layout_width="164dp"
+        android:layout_height="67dp"
+        android:text="Add contact"
+        android:textAllCaps="true"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ListContactsRV" />
+
+    <ImageButton
+        android:id="@+id/SortByGroupButton"
+        android:layout_width="97dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="84dp"
+        android:background="#E0C8ED"
+        android:src="@drawable/sort_group_button"
+        app:layout_constraintBottom_toTopOf="@+id/ListContactsRV"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.095" />
+
+    <ImageButton
+        android:id="@+id/SortAlphabeticallyButton"
+        android:layout_width="97dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="84dp"
+        android:background="#E0C8ED"
+        android:src="@drawable/sort_by_alpha"
+        app:layout_constraintBottom_toTopOf="@+id/ListContactsRV"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.604"
+        app:layout_constraintStart_toEndOf="@+id/SortByGroupButton"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.105" />
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+

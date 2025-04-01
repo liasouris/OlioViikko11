@@ -1,10 +1,111 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="16dp"
     tools:context=".AddContactActivity">
+
+    <!-- First Name EditText -->
+
+    <!-- Last Name EditText -->
+
+    <EditText
+        android:id="@+id/FirstNameEdit"
+        android:layout_width="266dp"
+        android:layout_height="61dp"
+        android:layout_marginBottom="8dp"
+        android:hint="First Name"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@id/LastNameEdit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.514"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <EditText
+        android:id="@+id/LastNameEdit"
+        android:layout_width="269dp"
+        android:layout_height="54dp"
+        android:layout_marginVertical="8dp"
+        android:hint="Last Name"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@id/PhoneNumberEdit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/FirstNameEdit" />
+
+    <!-- Phone Number EditText -->
+    <EditText
+        android:id="@+id/PhoneNumberEdit"
+        android:layout_width="266dp"
+        android:layout_height="54dp"
+        android:layout_marginVertical="8dp"
+        android:hint="Phone Number"
+        android:inputType="phone"
+        app:layout_constraintBottom_toTopOf="@id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/LastNameEdit" />
+
+    <!-- Group Label -->
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="8dp"
+        android:text="Group"
+        android:textAllCaps="true"
+        android:textColor="#513189"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/ContactTypeRadioGroup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/PhoneNumberEdit" />
+
+    <!-- RadioGroup for Contact Type -->
+    <RadioGroup
+        android:id="@+id/ContactTypeRadioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/textView"
+        app:layout_constraintBottom_toTopOf="@id/AddContactButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginVertical="8dp">
+
+        <RadioButton
+            android:id="@+id/PersonalRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Personal"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/WorkRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Work"
+            android:textSize="16sp" />
+    </RadioGroup>
+
+    <!-- Add Contact Button -->
+    <Button
+        android:id="@+id/AddContactButton"
+        android:layout_width="153dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="8dp"
+        android:text="ADD CONTACT"
+        app:iconPadding="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ContactTypeRadioGroup" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
